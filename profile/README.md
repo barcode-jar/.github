@@ -28,8 +28,17 @@ bar.draw("PAO-2026", 20, 20, 320, 110);     // 値, X, Y, 幅, 高さ
 
 | サンプル | 内容 | 状態 |
 |---|---|---|
-| [**springboot**](https://github.com/barcode-jar/springboot) | Spring Boot の Web アプリ。ブラウザで選んだバーコードを画像・SVG・PDF（Apache PDFBox）に出力。Docker ですぐ起動 | 公開中 |
-| [**javafx**](https://github.com/barcode-jar/javafx) | JavaFX のデスクトップアプリ。20 種類をその場でプレビューし、PNG・SVG 保存と印刷 | 公開中 |
+| [**springboot**](https://github.com/barcode-jar/springboot) | Spring Boot 3.5.16 の Web アプリ（Java 17 以上）。ブラウザで選んだバーコードを画像・SVG・PDF（Apache PDFBox）に出力。Docker ですぐ起動 | 公開中 |
+| [**javafx**](https://github.com/barcode-jar/javafx) | JavaFX 21.0.6 のデスクトップアプリ（Java 17 以上）。20 種類をその場でプレビューし、PNG・SVG 保存と印刷 | 公開中 |
+
+### Java の版とサンプル
+
+| Java の版 | 画面（デスクトップ） | Web | 入手先 |
+|---|---|---|---|
+| **Java 17 以上** | JavaFX 21.0.6（[javafx](https://github.com/barcode-jar/javafx)） | Spring Boot 3.5.16（[springboot](https://github.com/barcode-jar/springboot)） | GitHub・体験版 ZIP（barcode.jar.17.zip） |
+| **Java 8・11** | Swing | Spring Boot 2.7.18 | [体験版 ZIP](https://www.pao.ac/barcode.jar/)（barcode.jar.8.zip・barcode.jar.11.zip） |
+
+Java 8・11 では JavaFX と Spring Boot 3 が動かないため、同じ内容の Swing と Spring Boot 2.7.18 のサンプルを、体験版 ZIP に入れています。
 
 ## 対応バーコード
 
@@ -46,7 +55,8 @@ Maven Central の `ac.pao:barcode-jar` は**体験版**です。出力に赤い�
 Draw **20 barcode types** on any Java `Graphics2D`, or export them as PNG, SVG and PDF — from Spring Boot web apps to desktop apps and PDF reports.
 
 - Maven Central: `ac.pao:barcode-jar` (trial edition — output carries a red "SAMPLE" mark; the [licensed edition](https://www.pao.ac/barcode.jar/) has none)
-- Samples: [springboot](https://github.com/barcode-jar/springboot) (Spring Boot web app, Docker-ready) · [javafx](https://github.com/barcode-jar/javafx) (JavaFX desktop app)
+- Samples: [springboot](https://github.com/barcode-jar/springboot) (Spring Boot 3.5.16 web app, Docker-ready, Java 17+) · [javafx](https://github.com/barcode-jar/javafx) (JavaFX 21.0.6 desktop app, Java 17+)
+- Java 8 / 11: Swing and Spring Boot 2.7.18 samples are in the [trial ZIP](https://www.pao.ac/barcode.jar/)
 - Product page: https://www.pao.ac/barcode.jar/
 
 <sub>© Pao@Office · Sample code under the MIT License.</sub>
