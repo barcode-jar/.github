@@ -14,7 +14,7 @@
 **20 種類のバーコード**を、Java の Graphics2D に描いたり、PNG・SVG・PDF に出力したりできます。Spring Boot の Web アプリから、デスクトップのアプリ、帳票の PDF まで、同じ書き方で使えます。
 
 ```gradle
-implementation 'ac.pao:barcode-jar:5.3.1'
+implementation 'ac.pao:barcode-jar:5.3.2'
 ```
 
 ```java
